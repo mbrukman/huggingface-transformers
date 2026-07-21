@@ -261,7 +261,7 @@ class DynamicSlidingWindowLayer(DynamicLayer):
         """
         if self.get_seq_length() >= self.sliding_window:
             raise ValueError(
-                "Cannot `crop` a `DynamicSlidingWindowLayer` after it has seen more tokens than its"
+                "Cannot `crop` a `DynamicSlidingWindowLayer` after it has seen more tokens than its "
                 "sliding window (otherwise some states are lost)"
             )
         super().crop(max_length)
